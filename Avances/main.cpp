@@ -69,7 +69,7 @@ Animal crearAnimal(int codigoPropietario){
   return nuevoA;
 }
 
-void cargarDatos(ArregloPropietarios &general_,int codigos){
+void cargarDatos(ArregloPropietarios &general_){//provicional
   Propietario nuevo("Jose","Quispe","123456789","casa1",0);
   general_.addPropietario(nuevo);
 
@@ -97,7 +97,7 @@ main(){
   bool bucle=true;
   int globCodigo=7;
   ArregloPropietarios general;
-  cargarDatos(general,globCodigo);
+  cargarDatos(general);
 
   while (bucle){
     system("cls");
